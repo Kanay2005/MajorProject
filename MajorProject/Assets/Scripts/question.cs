@@ -6,6 +6,7 @@ public class question : MonoBehaviour
 {
     public string questionString;
     public int answer;
+    public bool specialQuestion;
     // Start is called before the first frame update
     void Start()
     {
