@@ -1191,7 +1191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0ff9eb881f5a44bd71de530ca24bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: {x: 50, y: 50}
+  speed: {x: 0, y: 20}
   answerText: {fileID: 104952992}
   answerString: 
   bullet: {fileID: 4645132878634221346, guid: 2622b794b3f6f1540ba47e1367182652, type: 3}

@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 screenBounds;
     private float objectWidth;
     private float objectHeight;
-    public Vector2 speed = new Vector2(50,50);
+    public Vector2 speed = new Vector2(0,20);
     public TextMeshPro answerText;
     public string answerString = "";
     public GameObject bullet;

@@ -40,13 +40,22 @@ public class EnemySpawner : MonoBehaviour
     }
 
     void Spawn(){
+        if(operation1 == 2){
+            number1 = Random.Range(1,Mathf.RoundToInt(randomInt()/3));
+        }
+        else{
+            number1 = Random.Range(1,randomInt());
+        }
         number1 = Random.Range(1,randomInt());
         operation1 = Random.Range(0,4);
-        if(operation1 == 0 | operation1 == 2){
+        if(operation1 == 0){
             number2 = Random.Range(1,randomInt());
         }
         if(operation1 == 1){
             number2 = Random.Range(1,number1+1);
+        }
+        if(operation1 == 2){
+            number2 = Random.Range(1,Mathf.RoundToInt(randomInt()/3));
         }
         if(operation1 == 3){
             number2 = Factors(number1)[Random.Range(0,Factors(number1).Count)];
@@ -59,17 +68,12 @@ public class EnemySpawner : MonoBehaviour
         }
         if(specialQuestion){
             tempNumber = Evaluate(number1 + operations[operation1] + number2);
-            operation2 = Random.Range(0,2);
-            if(operation2 == 0){
-                number3 = Random.Range(1,randomInt());
+            operation2 = Random.Range(2,4);
+            if(operation2 == 2){
+                number3 = Random.Range(1,4);
             }
-            if(operation2 == 1){
-                if(tempNumber != 0){
-                    number3 = Random.Range(1,tempNumber);
-                }
-                else{
-                    number3 = 0;
-                }
+            if(operation2 == 3){
+                number3 = Factors(number2)[Random.Range(0,Factors(number2).Count)];
             }
             question = number1.ToString() + operations[operation1] + number2.ToString() + operations[operation2] + number3.ToString();
         }
