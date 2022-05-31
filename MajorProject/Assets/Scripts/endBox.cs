@@ -5,10 +5,11 @@ using UnityEngine;
 public class endBox : MonoBehaviour
 {
     public GameObject gameManager;
+    public GameObject audioManager;
     // Start is called before the first frame update
     void Start()
     {
-        
+        audioManager = GameObject.Find("AudioManager");
     }
 
     // Update is called once per frame
@@ -17,7 +18,7 @@ public class endBox : MonoBehaviour
         
     }
     void OnTriggerEnter2D(Collider2D col) {
-        Debug.Log("yo mama");
+        audioManager.GetComponent<AudioManager>().Play("HitSound");
         gameManager.GetComponent<livesScript>().lives -= 1;
         Destroy(col.gameObject);
     }

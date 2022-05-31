@@ -82,14 +82,17 @@ public class EnemySpawner : MonoBehaviour
                 }
                 else{
                     number3 = randomInt(2);
-                    number2 = Mathf.RoundToInt(number2/3);
+                    if(operation1 ==0){
+                        number2 = Mathf.RoundToInt(number2/3);
+                    }
                 }
                 question = number1.ToString() + operations[operation1] + number2.ToString() + operations[2] + number3.ToString();
             }
             else{
                 question = number1.ToString() + operations[operation1] + number2.ToString();
             }
-        }        
+        }
+        print(question);
         answer = Evaluate(question);
         GameObject questionObject = Instantiate(enemyPrefab, new Vector3(10, Random.Range(screenBounds.y * -1 + objectHeight, screenBounds.y - objectHeight - 1f), 0), Quaternion.identity);
         questionObject.GetComponent<Rigidbody2D>().velocity = new Vector2(-1.0f-Mathf.Sqrt((float)time*(float)valueDiffIncrease*(float)valueDiffIncrease/(25f*60f)),0f);

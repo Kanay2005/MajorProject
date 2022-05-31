@@ -334,7 +334,7 @@ MonoBehaviour:
     topRight: {r: 1, g: 1, b: 1, a: 1}
     bottomLeft: {r: 1, g: 1, b: 1, a: 1}
     bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 11400000, guid: 2314fa30070a9a048a0730a670b47098, type: 2}
+  m_fontColorGradientPreset: {fileID: 11400000, guid: ab32b3237b725614a999ac196307a23c, type: 2}
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
@@ -604,6 +604,24 @@ MonoBehaviour:
     loop: 1
     mixerGroup: {fileID: -1427164292608406075, guid: bfbba1d284e7e6d4bbe02dfbf849aeaf, type: 2}
     source: {fileID: 0}
+  - name: HitSound
+    clip: {fileID: 8300000, guid: b731cc9f5c36c594e872fb0254ef819d, type: 3}
+    volume: 0.1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 816858666141366422, guid: bfbba1d284e7e6d4bbe02dfbf849aeaf, type: 2}
+    source: {fileID: 0}
+  - name: Fail
+    clip: {fileID: 8300000, guid: 79141e9bb5427de45bcbd95bd07355f7, type: 3}
+    volume: 0.1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 816858666141366422, guid: bfbba1d284e7e6d4bbe02dfbf849aeaf, type: 2}
+    source: {fileID: 0}
 --- !u!4 &303146401
 Transform:
   m_ObjectHideFlags: 0
@@ -657,7 +675,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.000061035, y: -403}
-  m_SizeDelta: {x: 162.9576, y: 82.0868}
+  m_SizeDelta: {x: 200, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &358049503
 MonoBehaviour:
@@ -816,7 +834,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.75294125, b: 0.31764707, a: 1}
+  m_Color: {r: 0.7019608, g: 0.84313726, b: 0.8745098, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1352,7 +1370,7 @@ MonoBehaviour:
     topRight: {r: 1, g: 1, b: 1, a: 1}
     bottomLeft: {r: 1, g: 1, b: 1, a: 1}
     bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 11400000, guid: 2314fa30070a9a048a0730a670b47098, type: 2}
+  m_fontColorGradientPreset: {fileID: 11400000, guid: ab32b3237b725614a999ac196307a23c, type: 2}
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
@@ -1843,7 +1861,7 @@ MonoBehaviour:
     topRight: {r: 1, g: 1, b: 1, a: 1}
     bottomLeft: {r: 1, g: 1, b: 1, a: 1}
     bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 11400000, guid: 2314fa30070a9a048a0730a670b47098, type: 2}
+  m_fontColorGradientPreset: {fileID: 11400000, guid: ab32b3237b725614a999ac196307a23c, type: 2}
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
@@ -2284,7 +2302,7 @@ MonoBehaviour:
     topRight: {r: 1, g: 1, b: 1, a: 1}
     bottomLeft: {r: 1, g: 1, b: 1, a: 1}
     bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 11400000, guid: 2314fa30070a9a048a0730a670b47098, type: 2}
+  m_fontColorGradientPreset: {fileID: 11400000, guid: ab32b3237b725614a999ac196307a23c, type: 2}
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
@@ -2811,7 +2829,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.000061035, y: -403}
-  m_SizeDelta: {x: 162.9576, y: 82.0868}
+  m_SizeDelta: {x: 200, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1253231223
 MonoBehaviour:
@@ -3608,7 +3626,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.75294125, b: 0.31764707, a: 1}
+  m_Color: {r: 0.7019608, g: 0.84313726, b: 0.8745098, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4006,7 +4024,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.000061035, y: -403}
-  m_SizeDelta: {x: 162.9576, y: 82.0868}
+  m_SizeDelta: {x: 200, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1638867077
 MonoBehaviour:
