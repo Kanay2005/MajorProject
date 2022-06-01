@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public TextMeshPro answerText;
     public string answerString = "";
     public GameObject bullet;
+    public Animator playerAnimator;
     // Start is called before the first frame update
     void Awake()
     {
@@ -29,6 +30,19 @@ public class PlayerMovement : MonoBehaviour
     {
         float inputY = Input.GetAxis("Vertical");
         Vector3 movement = new Vector3(0, speed.y * inputY, 0);
+        print(movement.y);
+        if(movement.y > 0){
+            playerAnimator.SetBool("moveUp", true);
+            playerAnimator.SetBool("moveDown", false);
+        }
+        if(movement.y < 0){
+            playerAnimator.SetBool("moveUp", false);
+            playerAnimator.SetBool("moveDown", true);
+        }
+        if(movement.y == 0){
+            playerAnimator.SetBool("moveDown", false);
+            playerAnimator.SetBool("moveUp", false);
+        }
         movement *= Time.deltaTime;
         transform.Translate(movement);
         if(Input.GetKeyDown(KeyCode.Alpha1)){

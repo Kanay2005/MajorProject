@@ -77,6 +77,7 @@ public class EnemySpawner : MonoBehaviour
         else{
             if(operation1 != 1){
                 specialQuestion = true;
+                
                 if(operation1 == 2){
                     number3 = Random.Range(1,valueDiffIncrease);
                 }
@@ -102,7 +103,7 @@ public class EnemySpawner : MonoBehaviour
         questionObject.GetComponent<question>().answer = answer;
         questionObject.GetComponent<Transform>().GetChild(0).gameObject.GetComponent<TextMeshPro>().text = question;
         if(specialQuestion){
-            questionObject.GetComponent<SpriteRenderer>().color = new Color(255,255,0);
+            questionObject.GetComponent<SpriteRenderer>().color = new Color(0,255,0);
         }
         if((12-valueDiffIncrease)*Mathf.Exp((float)time*-1/60) > 8-valueDiffIncrease){
             Invoke("Spawn", (12-valueDiffIncrease)*Mathf.Exp((float)time*-1/60));
