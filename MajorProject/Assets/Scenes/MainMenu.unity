@@ -1843,7 +1843,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Cool Maths Game
+  m_text: SPACE MATHS
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 45bd7dcfccca77e4981b9f38880ba39f, type: 2}
   m_sharedMaterial: {fileID: 2568314866605893802, guid: 45bd7dcfccca77e4981b9f38880ba39f, type: 2}

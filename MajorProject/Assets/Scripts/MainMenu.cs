@@ -6,9 +6,8 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     // Start is called before the first frame update
-  
     public void QuitGame(){
-        Debug.Log("quit");
+        //Close the application
         Application.Quit();
     }
 }

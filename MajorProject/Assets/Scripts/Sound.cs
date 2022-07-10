@@ -3,9 +3,8 @@ using UnityEngine;
 
 [System.Serializable]
 public class Sound {
-	
+	//Declaring all the variables are used to input new audio clips in the unity editor
 	public string name;
-
 	public AudioClip clip;
 
 	[Range(0f, 1f)]
